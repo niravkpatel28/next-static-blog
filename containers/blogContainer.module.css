@@ -1,0 +1,21 @@
+.blogContent {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.blogContent img {
+  width: 100%;
+}
+
+.sidePanel {
+  width: 30%;
+}
+
+.blogElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

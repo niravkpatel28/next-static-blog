@@ -1,0 +1,24 @@
+{
+  "name": "03-blogs",
+  "version": "1.0.0",
+  "description": "Render pages with dynamic id ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build"
+  },
+  "keywords": [
+    "next",
+    "data",
+    "fetching"
+  ],
+  "author": "Nirav Patel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "next": "^9.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -1,0 +1,10 @@
+.blogList {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: solid;
+  padding: 10px;
+  text-align: center;
+}
