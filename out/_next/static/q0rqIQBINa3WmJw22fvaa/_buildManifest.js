@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/blogs/[id]":["static\u002Fcss\u002F929cd6a00010c84158f2.css"],"/index":[a]}}("static\u002Fcss\u002Fefe4f8052477230a99ff.css"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
