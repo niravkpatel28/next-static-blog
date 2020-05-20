@@ -2,31 +2,23 @@ import Axios from "axios";
 import Layout from "../components/layout";
 import styles from "./index.module.css";
 import { useRouter } from "next/router";
-import { route } from "next/dist/next-server/server/router";
+import BlogCard from "../components/blogCard";
 const Index = (props) => {
   //   console.log(props);
 
   const router = useRouter();
-  const navigateBlog = (event) => {
-    router.push(`/blogs/${event.target.id}`);
+  const navigateBlog = (id) => {
+    console.log("onclick", id);
+    router.push(`/blogs/${id}`);
   };
   console.log(router);
   return (
     <Layout>
+      <h1 className={styles.indexTitle}> Blog List </h1>
       <div className={styles.blogList}>
-        <h1> Blog List </h1>
         {props.blogs.map((blog) => {
           return (
-            <p
-              id={blog.id}
-              key={blog.id}
-              onClick={(event) => {
-                navigateBlog(event);
-              }}
-            >
-              {" "}
-              {blog.title}{" "}
-            </p>
+            <BlogCard blogData={blog} onClick={navigateBlog} key={blog.id} />
           );
         })}
       </div>
@@ -47,3 +39,15 @@ export const getStaticProps = async () => {
 };
 
 export default Index;
+
+// incase there have to be display links
+// <p
+//   id={blog.id}
+//   key={blog.id}
+//   onClick={(event) => {
+//     navigateBlog(event);
+//   }}
+// >
+//   {" "}
+//   {blog.title}{" "}
+// </p>

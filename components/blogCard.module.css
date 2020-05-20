@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  background-color: black;
+  margin: 10px;
+  color: white;
+  justify-content: center;
+  align-content: center;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  /* width: 40%; */
+  height: 40%;
+  width: 100%;
+  margin: auto;
+}
+.imageStyle {
+  width: 100px;
+  height: 100px;
+}
+
+.blogLinks {
+  text-align: center;
+  color: white;
+  /* text-decoration: none; */
+}

@@ -1,10 +1,17 @@
 .blogList {
-  width: 50%;
+  width: 100%;
   margin: auto;
   display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  border: solid;
+  flex-direction: row;
+  /* border-radius: 20px; */
+  /* border: solid; */
   padding: 10px;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.indexTitle {
+  text-align: center;
+  margin: auto;
 }
